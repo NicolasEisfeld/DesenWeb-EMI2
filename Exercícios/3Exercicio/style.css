@@ -1,0 +1,25 @@
+* {
+    text-decoration: none;
+    margin: 0%;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: Cursive;
+    background-color:darkslategray;
+    color:bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-family: Segoe UI;
+    color:darkslategray;
+    padding: 0.5rem 1rem;
+}
