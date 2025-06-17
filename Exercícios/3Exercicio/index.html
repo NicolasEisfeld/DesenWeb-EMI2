@@ -11,6 +11,36 @@
     <h2>Nome do estudante: Nicolas Eisfeld Ferreira</h2>
     <h2>Professor: Ernani Gottardo</h2>
 
+    <div class="exercicio">
+        <h2>Exercício 1</h2>
+        <p id="idade"></p>
+        <p id="dias-faltando"></p>
+    </div>
+
+    <div class="exercicio">
+        <h2>Exercício 2</h2>
+        <p >Informe uma data inicial e a quantidade de semanas para gerar as datas do mesmo dia da semana.</p>
+        <form id="formulario-datas" >
+            <div class="grupo-entrada">
+                <label for="data-inicial">Data Inicial</label>
+                <input type="date" id="data-inicial" name="data-inicial"/>
+            </div>
+            <div class="grupo-entrada">
+                <label for="quantidade-semanas">Quantidade de Semanas</label>
+                <input type="number" id="quantidade-semanas" name="quantidade-semanas" min="1" value="1"/>
+            </div>
+            <button type="submit">Gerar Tabela</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+        <h2>Exercício 3</h2>
+        <button id="geraApostaBtn" type="button" >Gerar Aposta</button>
+        <p id="descAposta" class="subtitle">Clique no botão para gerar uma aposta de 6 números aleatórios não repetidos entre 1 e 60.</p>
+        <div id="apostaResultado" role="region"></div>
+    </div>
+
+    <script src="nicolasfListajs3.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

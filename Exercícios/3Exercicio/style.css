@@ -1,25 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
 * {
-    text-decoration: none;
-    margin: 0%;
+  text-decoration: none;
+  margin: 0%;
 }
 
 body {
-    background-color: blanchedalmond;
+  background-color: #FAEBD7;
 }
 
 h1 {
-    padding: 1rem;
-    font-size: 2rem;
-    font-family: Cursive;
-    background-color:darkslategray;
-    color:bisque;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: Inter;
+  background-color: darkslategray;
+  color: #FAEBD7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {
-    font-family: Segoe UI;
-    color:darkslategray;
-    padding: 0.5rem 1rem;
+  font-family: Segoe UI;
+  color: darkslategray;
+  padding: 0.5rem 1rem;
+}
+
+.exercicio {
+  margin: 1rem 2rem;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-radius: 0.7rem;
+  border-color: darkslategray;
+}
+
+p {
+  font-family: Inter;
+  color: darkslategray;
+  padding: 0.5rem 1.2rem;
+}
+
+.grupo-entrada {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  margin-left: 1rem;
+  font-weight: 600;
+  font-family: Inter;
+  color: darkslategray;
+  flex-basis: 100%;
+}
+
+input[type="date"],
+input[type="number"] {
+  padding: 0.6rem 0.75rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-family: Inter;
+  color: darkslategray;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  flex-grow: 1;
+  max-width: 300px;
+  transition: #FAEBD7 0.3s ease;
+}
+
+input[type="date"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: darkslategray;
+  box-shadow: 0 0 4px rgba(59, 130, 246, 0.5);
+}
+
+button {
+  background: darkslategray;
+  color: #FAEBD7;
+  margin: 1rem;
+  font-family: Inter;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: darkslategray 0.3s ease;
+  align-self: flex-start;
+}
+
+.tabela-semanas {
+  margin: 20px auto; 
+  border-collapse: collapse;
+  width: 80%; 
+}
+
+.tabela-semanas th, .tabela-semanas td {
+  border: 1px solid darkslategray; 
+  padding: 6px; 
+}
+
+.tabela-semanas th {
+  background-color: darkslategray; 
+  color: #FAEBD7;
+  text-align: center;
+}
+
+
+button:hover,
+button:focus {
+  background-color: rgb(85, 143, 143);
+  outline: none;
+}
+
+div#resultado {
+  margin-top: 3rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+thead th {
+  text-align: left;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  font-family: Inter;
+  color: darkslategray;
+}
+
+tbody tr {
+  background: #FAEBD7;
+  border-radius: 0.5rem;
+  font-family: Inter;
+  box-shadow: 0 2px 4px darkslategray;
+}
+
+tbody tr td {
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-family: Inter;
+  color: darkslategray;
+}
+#apostaResultado table {
+  border-collapse: collapse;
+  width: auto;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+#apostaResultado thead th {
+  font-weight: 700;
+  color: darkslategray;
+  font-size: 1.125rem;
+  padding-bottom: 0.6rem;
+}
+
+#apostaResultado tbody tr {
+  background: transparent;
+  box-shadow: none;
+}
+#apostaResultado tbody tr td {
+  background-color: #e0e7ff;
+  border-radius: 0.5rem;
+  color: #FAEBD7;
+  background-color: darkslategray;
+  font-weight: 700;
+  min-width: 2.5rem;
+  padding: 0.5rem 1rem;
+  font-family: Segoe UI;
+  text-align: center;
+  margin: 0.2rem 0.5rem 1rem 0.5rem;
+  display: inline-block;
+}
+#apostaResultado tbody tr td:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+#apostaResultado tbody tr {
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 0;
 }
