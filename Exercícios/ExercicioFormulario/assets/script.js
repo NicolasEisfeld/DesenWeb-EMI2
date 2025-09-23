@@ -20,7 +20,7 @@ function validarPeso() {
     let pesoValor = parseFloat(peso.value);
     if (!isNaN(pesoValor) && pesoValor > 0) {
         peso.setAttribute('class', 'correto');
-        return pesoValor; 
+        return pesoValor;
     } else {
         peso.setAttribute('class', 'incorreto');
         return false;
@@ -28,7 +28,7 @@ function validarPeso() {
 }
 
 function validarForm(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     let alturaValor = validarAltura();
     let pesoValor = validarPeso();
@@ -37,7 +37,7 @@ function validarForm(event) {
         let IMC = pesoValor / Math.pow(alturaValor, 2);
         respostaIMC.setAttribute('value', IMC.toFixed(2));
 
-        if (IMC > 18) {
+        if (IMC < 18) {
             imagemIMC.setAttribute('src', 'src/normal.png');
         } else if (IMC < 28) {
             imagemIMC.setAttribute('src', 'src/sobrepeso.png');
