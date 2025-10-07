@@ -1,0 +1,17 @@
+main {
+    background-color: gray;
+    padding: 1rem 1rem 3rem;
+}
+
+input {
+    padding: 0.6rem;
+
+}
+
+.correto {
+    border-color: greenyellow;
+}
+
+.incorreto {
+    border-color:brown;
+}

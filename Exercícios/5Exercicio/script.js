@@ -15,25 +15,29 @@ function calcular() {
     let num1 = $('#numero1').val();
     let num2 = $('#numero2').val();
 
-    if (validar(num1)) {
+    let num1Valido = validar(num1);
+    let num2Valido = validar(num2);
+
+    if (num1Valido) {
         $('#numero1').attr('class', 'correto');
-        
     } else {
         $('#numero1').attr('class', 'incorreto');
     }
 
-    if (validar(num2)) {
+    if (num2Valido) {
         $('#numero2').attr('class', 'correto');
     } else {
         $('#numero2').attr('class', 'incorreto');
-        
+    }
+
+    if (!num1Valido || !num2Valido) {
+        $("#resultado").attr('value', '');
+        $('#imagem-operacao').attr('src', '');
+        return;
     }
 
     num1 = parseFloat(num1);
     num2 = parseFloat(num2);
-
-
-
 
     if ($("#operacao").val() == "mais") {
         var soma = num1 + num2;
