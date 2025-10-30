@@ -1,4 +1,4 @@
-📚 Desenvolvimento Web II - EMI Informática
+# 📚 Desenvolvimento Web II - EMI Informática
 
 Repositório da disciplina de Desenvolvimento Web II do Ensino Médio Integrado em Informática no IFRS Campus Erechim.
 🎯 O que foi aprendido
